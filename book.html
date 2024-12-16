@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Planify-Book Your Trip</title>
+   <link rel="stylesheet" href="scss/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <section class="header">
+      <a href="index.html" class="logo">Planify</a>
+      <nav class="navbar">
+         <a href="index.html">Home</a>
+         <a href="package.html">Package</a>
+         <a href="book.html">Book</a>
+         <a href="about.html">About</a>
+         <a href="Login.html">Log Out</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </section>
+   <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
+      <h1>book now</h1>
+   </div>
+   <section class="booking">
+      <h1 class="heading-title">Book your trip!</h1>
+      <form action="book.php" method="POST" class="book-form" id="book-form">
+          <div class="flex">
+              <div class="inputBox">
+                  <span>Name:</span>
+                  <input type="text" placeholder="Enter your name" name="name" required>
+              </div>
+              <div class="inputBox">
+                  <span>Email:</span>
+                  <input type="email" placeholder="Enter your email" name="email" required>
+              </div>
+              <div class="inputBox">
+                  <span>Phone:</span>
+                  <input type="text" placeholder="Enter your phone number" name="phone" required>
+              </div>
+              <div class="inputBox">
+                  <span>Address:</span>
+                  <input type="text" placeholder="Enter your address" name="address" required>
+              </div> 
+              <div class="inputBox">
+                  <span>Destination:</span>
+                  <select name="location" id="destination-select" required>
+                      <option value="">Select a destination</option>
+                      <option value="Ganga CHoti">Ganga CHoti</option>
+                      <option value="Naran Kaghan">Naran Kaghan</option>
+                      <option value="Gilgit">Gilgit</option>
+                      <option value="Siri Paye">Siri Paye</option>
+                      <option value="Umbrella Waterfall">Umbrella Waterfall</option>
+                      <option value="Katas Raj Temple">Katas Raj Temple</option>
+                  </select>
+              </div>
+              <div class="inputBox">
+                  <span>Guests:</span>
+                  <input type="number" placeholder="Number of guests" name="guests" required>
+              </div>
+              <div class="inputBox">
+                  <span>Arrivals:</span>
+                  <input type="date" name="arrivals" required>
+              </div>
+              <div class="inputBox">
+                  <span>Leaving:</span>
+                  <input type="date" name="leaving" required>
+              </div>
+          </div>
+          <input type="submit" value="Submit" class="btn" name="send">
+      </form>
+    
+  </section>
+   <section class="footer">
+      <div class="box-container">
+         <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-angle-right"></i> Home</a>
+            <a href="package.html"> <i class="fas fa-angle-right"></i> Package</a>
+            <a href="book.html"> <i class="fas fa-angle-right"></i> Book</a>
+            <a href="about.html"> <i class="fas fa-angle-right"></i> About</a>
+         </div>
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 0092-312-3456789 </a>
+            <a href="#"> <i class="fas fa-phone"></i> 0092-312-3456789 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> support@planify.com </a>
+            <a href="#"> <i class="fas fa-map"></i> Islamabad, Pakistan - 46000 </a>
+         </div>
+         <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+         </div>
+      </div>
+      <div class="credit"> created by <span>Hasnain Aftab, M. Idrees Lang & Usman Iqbal</span> | all rights reserved! </div>
+   </section>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
